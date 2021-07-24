@@ -28,3 +28,7 @@
 
 - It primary purpose is to support running JUnit 3 and JUnit 4 written tests on the JUnit 5 platform. 
 - It’s there are backward compatibility.
+
+# Installation 📫
+
+You can use JUnit 5 in your maven or gradle project by including minimum two dependencies i.e. Jupiter Engine Dependency and Platform Runner Dependency.
