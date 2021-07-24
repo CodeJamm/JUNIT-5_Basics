@@ -13,3 +13,18 @@
 # JUnit 5 Architecture 📺
   
      JUnit 5 = JUnit Platform + JUnit Jupiter + JUnit Vintage
+
+## JUnit Platform
+
+- To be able to launch junit tests, IDEs, build tools or plugins need to include and extend platform APIs. It defines the TestEngine API for developing new testing frameworks that runs on the platform.
+- It also provides a Console Launcher to launch the platform from the command line and build plugins for Gradle and Maven.
+
+## JUnit Jupiter
+
+- It includes new programming and extension models for writing tests. 
+- It has all new junit annotations and TestEngine implementation to run tests written with these annotations.
+
+## JUnit Vintage
+
+- It primary purpose is to support running JUnit 3 and JUnit 4 written tests on the JUnit 5 platform. 
+- It’s there are backward compatibility.
