@@ -9,3 +9,5 @@
 - For very long time, JUnit has been doing its job perfectly. 
 - In between, JDK 8 brought very exciting features in java and most notably lambda expressions. 
 - JUnit 5 aims to adapt java 8 style of coding and several other features as well, that’s why java 8 is required to create and execute tests in JUnit 5 (though it is possible to execute tests written with JUnit 3 or JUnit 4 for backward compatibility).
+
+# JUnit 5 Architecture
