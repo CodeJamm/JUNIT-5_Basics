@@ -155,3 +155,10 @@ Additionally, you can use following annotations for filtering test packages, cla
 
 # Assertions ⌚
 
+- Assertions help in validating the expected output with actual output of a testcase. To keep things simple, all JUnit Jupiter assertions are static methods in the org.junit.jupiter.Assertions class e.g. assertEquals(), assertNotEquals().
+
+
+
+
+
+
