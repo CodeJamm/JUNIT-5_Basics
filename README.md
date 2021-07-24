@@ -180,4 +180,26 @@ Additionally, you can use following annotations for filtering test packages, cla
 - In test report, these test will be marked as passed.
 - JUnit jupiter Assumptions class has two such methods: assumeFalse(), assumeTrue().
 
+      public class AppTest 
+      {
+          @Test
+          void testOnDev() 
+          {
+              System.setProperty("ENV", "DEV");
+              Assumptions.assumeTrue("DEV".equals(System.getProperty("ENV")), AppTest::message);
+          }
+      
+          @Test
+          void testOnProd() 
+          {
+              System.setProperty("ENV", "PROD");
+              Assumptions.assumeFalse("DEV".equals(System.getProperty("ENV")));  
+          }
+      
+          private static String message () 
+          {
+              return "TEST Execution Failed :: ";
+          }
+      }
+      
 
