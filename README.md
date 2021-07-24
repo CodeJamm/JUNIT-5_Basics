@@ -131,3 +131,9 @@ You can use JUnit 5 in your maven or gradle project by including minimum two dep
 - Using JUnit 5 test suites, you can run tests spread into multiple test classes and different packages. JUnit 5 provides two annotations: @SelectPackages and @SelectClasses to create test suites.
 - To execute the suite, you will use @RunWith(JUnitPlatform.class).
 
+    @RunWith(JUnitPlatform.class)
+    @SelectPackages("com.howtodoinjava.junit5.examples")
+    public class JUnit5TestSuiteExample 
+    {
+    
+    }
