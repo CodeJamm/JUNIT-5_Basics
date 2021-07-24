@@ -128,7 +128,8 @@ You can use JUnit 5 in your maven or gradle project by including minimum two dep
 
 # Test Suites ✔️
 
-- Using JUnit 5 test suites, you can run tests spread into multiple test classes and different packages. JUnit 5 provides two annotations: @SelectPackages and @SelectClasses to create test suites.
+- Using JUnit 5 test suites, you can run tests spread into multiple test classes and different packages. 
+- JUnit 5 provides two annotations: @SelectPackages and @SelectClasses to create test suites.
 - To execute the suite, you will use @RunWith(JUnitPlatform.class).
 
       @RunWith(JUnitPlatform.class)
@@ -155,7 +156,8 @@ Additionally, you can use following annotations for filtering test packages, cla
 
 # Assertions ⌚
 
-- Assertions help in validating the expected output with actual output of a testcase. To keep things simple, all JUnit Jupiter assertions are static methods in the org.junit.jupiter.Assertions class e.g. assertEquals(), assertNotEquals().
+- Assertions help in validating the expected output with actual output of a testcase. 
+- To keep things simple, all JUnit Jupiter assertions are static methods in the org.junit.jupiter.Assertions class e.g. assertEquals(), assertNotEquals().
 
       void testCase() 
       {
@@ -173,6 +175,9 @@ Additionally, you can use following annotations for filtering test packages, cla
         
 # Assumptions ⌛
 
-
+- Assumptions class provides static methods to support conditional test execution based on assumptions. 
+- A failed assumption results in a test being aborted. Assumptions are typically used whenever it does not make sense to continue execution of a given test method. 
+- In test report, these test will be marked as passed.
+- JUnit jupiter Assumptions class has two such methods: assumeFalse(), assumeTrue().
 
 
