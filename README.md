@@ -157,6 +157,20 @@ Additionally, you can use following annotations for filtering test packages, cla
 
 - Assertions help in validating the expected output with actual output of a testcase. To keep things simple, all JUnit Jupiter assertions are static methods in the org.junit.jupiter.Assertions class e.g. assertEquals(), assertNotEquals().
 
+      void testCase() 
+      {
+          //Test will pass
+          Assertions.assertNotEquals(3, Calculator.add(2, 2));
+      
+          //Test will fail 
+          Assertions.assertNotEquals(4, Calculator.add(2, 2), "Calculator.add(2, 2) test failed");
+      
+          //Test will fail 
+          Supplier<String> messageSupplier  = ()-> "Calculator.add(2, 2) test failed";
+          Assertions.assertNotEquals(4, Calculator.add(2, 2), messageSupplier);
+        }
+        
+        
 
 
 
