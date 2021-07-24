@@ -204,3 +204,9 @@ Additionally, you can use following annotations for filtering test packages, cla
       
 
 # Backward Compatibility for JUnit 3 or JUnit 4 ⏩ 
+
+- JUnit 4 has been here for a quite long time and there are numerous tests written in junit 4. 
+- JUnit Jupiter need to support those tests as well. For this purpose, JUnit Vintage sub-project is developed.
+- JUnit Vintage provides a TestEngine implementation for running JUnit 3 and JUnit 4 based tests on the JUnit 5 platform.
+
+
