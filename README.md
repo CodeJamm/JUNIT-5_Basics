@@ -84,7 +84,7 @@ You can use JUnit 5 in your maven or gradle project by including minimum two dep
     import org.junit.jupiter.api.Disabled;
     import org.junit.jupiter.api.Tag;
     import org.junit.jupiter.api.Test;
-    import com.howtodoinjava.junit5.examples.Calculator;
+    import com.gowthamrajk.junit5.examples.Calculator;
  
     public class AppTest {
      
@@ -132,7 +132,7 @@ You can use JUnit 5 in your maven or gradle project by including minimum two dep
 - To execute the suite, you will use @RunWith(JUnitPlatform.class).
 
       @RunWith(JUnitPlatform.class)
-      @SelectPackages("com.howtodoinjava.junit5.examples")
+      @SelectPackages("com.gowthamrajk.junit5.examples")
       public class JUnit5TestSuiteExample 
       {
     
@@ -143,3 +143,12 @@ Additionally, you can use following annotations for filtering test packages, cla
    1) @IncludePackages and @ExcludePackages to filter packages
    2) @IncludeClassNamePatterns and @ExcludeClassNamePatterns to filter test classes
    3) @IncludeTags and @ExcludeTags to filter test methods
+
+    @RunWith(JUnitPlatform.class)
+    @SelectPackages("com.gowthamrajkinjava.junit5.examples")
+    @IncludePackages("com.gowthamrajk.junit5.examples.packageC")
+    @ExcludeTags("PROD")
+    public class JUnit5TestSuiteExample 
+    {
+    
+    }
