@@ -137,3 +137,9 @@ You can use JUnit 5 in your maven or gradle project by including minimum two dep
       {
     
       }
+
+Additionally, you can use following annotations for filtering test packages, classes or even test methods.
+
+   1) @IncludePackages and @ExcludePackages to filter packages
+   2) @IncludeClassNamePatterns and @ExcludeClassNamePatterns to filter test classes
+   3) @IncludeTags and @ExcludeTags to filter test methods
